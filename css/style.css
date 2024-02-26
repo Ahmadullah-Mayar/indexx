@@ -1,0 +1,328 @@
+:root{
+    --white:#fff;
+    --blue:rgb(102, 102, 231);
+    --color1:#50C4ED;
+    --color2:#4d76be;
+    --color3:#b7c9f2;
+    --gray:#777;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    /* font-weight: 400; */
+    /* font-family: Iranyekan,Roboto,sans-serif; */
+}
+.about{
+    background-color: var(--color2);
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.about .about_contaent{
+    width: 50%; 
+    height: 30vh;
+}
+.about .about_contaent h1{
+    color:var(--white);
+    font-size: 2rem;
+    padding: 0.5em 0;
+}
+.about .about_contaent p{
+    color:var(--white);
+}
+/* about section responsive */
+/* Adjustments for mobile devices */
+@media only screen and (max-width: 600px) {
+    .about .about_contaent {
+      width: 80%;
+      height: auto;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+  }
+
+
+
+
+
+
+/* Mission section is started */
+.our_mission {
+    width: 100%;
+    height: 30vh;
+    background-color: #faffff;
+}
+.our_mission .wrapper{
+     display: flex;
+    justify-content: center; 
+}
+.wrapper .child_wrapper{
+    width: 40%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrapper .child_wrapper h2{
+    padding: 0 0 0.5em 0;
+}
+/* Mission section responsive */
+
+/* Adjustments for mobile devices */
+@media only screen and (max-width: 600px) {
+    .wrapper .child_wrapper {
+      width: 80%;
+      height: auto;
+      margin-bottom: 1em;
+    }
+  }
+
+
+
+
+
+
+/* happiness is started */
+.cantainer{
+    width: inherit;
+    background-color: var(--color2);
+}
+.cantainer .wrapper_happ{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 2em 0 1em 0;
+ 
+}
+.cantainer .wrapper_happ .happiness{
+    width: 20%;
+}
+.cantainer .wrapper_happ .happiness h3{
+    padding: 1em 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: var(--white);
+}
+.cantainer .wrapper_happ .happiness p{
+    font-weight: bold;
+    color: var(--white);
+}
+/* cantainer section is responsive */
+
+/* Adjustments for mobile devices */
+@media only screen and (max-width: 600px) {
+    .cantainer .wrapper_happ {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .cantainer .wrapper_happ .happiness {
+      width: 80%;
+      margin-bottom: 1em;
+    }
+  }
+
+
+
+
+
+
+
+/* image section  */
+.right h4{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 0.5em 0;
+    color: var(--gray);
+
+}
+.right .image-wrapper{
+    width: inherit;
+    display: flex;
+    justify-content: space-evenly;
+     border-radius: 2em;
+   
+
+}
+.right .image-wrapper .imge-conteant{
+    background-image: url(/assets/image/secand_cards/work2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 25%;
+    justify-content: center;
+   align-items: center;
+   border-radius: 0.3em;
+    padding: 1em;
+    box-shadow: 0 0 5px black;
+}
+
+.right .image-wrapper .imge-conteant:nth-child(2){
+    background-image: url(/assets/image/secand_cards/language.jpg);
+}
+.right .image-wrapper .imge-conteant:nth-child(3){
+    background-image: url(/assets/image/secand_cards/back.jpg);
+}
+.right .image-wrapper .imge-conteant h5{
+        font-size: 2em;
+        font-weight: bold;
+        padding: 0.5em 0;
+        color: #fff;
+}
+.right .image-wrapper .imge-conteant p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+}
+/* text cards is started  */
+.right{
+    background-color: #faffff;
+}
+.right h6{
+    text-align: center;
+    font-weight: bold;
+    padding: 1.5em 0em 1em 0em;
+    color: var(--gray);
+    font-size: 2.5rem;
+
+}
+.right .text-wrapper{
+    width: inherit;
+    display: flex;
+    justify-content: space-evenly;
+     border-radius: 2em;
+     padding-bottom: 3.5em;
+}
+.right .text-wrapper .text-conteant{
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3em;
+    padding: 1em;
+    box-shadow: 0 0 5px black;
+   
+} 
+.right .text-wrapper .text-conteant h5{
+  padding: 1em 0 ;
+  font-size: 1em;
+}
+
+/* right section responsive */
+/* Adjustments for mobile devices */
+@media only screen and (max-width: 600px) {
+    .right .image-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .right .image-wrapper .imge-conteant {
+      width: 80%;
+      margin-bottom: 1em;
+    }
+    
+    .right .text-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 1em;
+    }
+    
+    .right .text-wrapper .text-conteant {
+      width: 80%;
+      margin-bottom: 1em;
+    }
+  }
+
+
+
+
+
+
+/* end section is  started  */
+.end-section {
+    background-color: rgb(187, 206, 188);   
+}
+.end-section h1 {
+    text-align: center;
+    padding: 1em 0;
+    font-size: 2em;
+    color: var(--gray);
+}
+.end-section .big-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid var(--gray);
+    padding: 2em 0;
+}
+.end-section .big-wrapper .big-img img{
+    width: 35vw;
+    border-radius: 0.3em; 
+}
+.end-section .big-wrapper .text-class{
+    width: 40%;
+}
+.end-section .big-wrapper .text-class h2{
+ padding: 0.5em 0;
+}
+.end-section .under-class .under-wapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5em 0 2.5em 0; 
+}
+.end-section .under-class .under-wapper p{
+    width: 15%;
+}
+
+/* end section responsive */
+/* Adjustments for mobile devices */
+@media only screen and (max-width: 600px) {
+    .end-section .big-wrapper {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      padding: 1em 0;
+    }
+    
+    .end-section .big-wrapper .big-img img {
+      width: 80%;
+      margin-bottom: 1em;
+    }
+    
+    .end-section .big-wrapper .text-class {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    
+    .end-section .under-class .under-wapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 1em 0 2em 0;
+    }
+    
+    .end-section .under-class .under-wapper p {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+
+
+
+
+
+
+
